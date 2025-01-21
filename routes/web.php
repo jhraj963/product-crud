@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 Route::post('/products', [ProductController::class, 'store']);
-Route::get('/products/{id}', [ProductController::class, 'show']);
+Route::get('/{id}', [ProductController::class, 'show']);
